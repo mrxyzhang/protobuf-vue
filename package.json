@@ -4,10 +4,14 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "protoJs": "pbjs -t json-module -w commonjs -o src/protoGenerate/proto.js  src/proto/*.proto",
+    "protoJson": "pbjs -t json src/proto/*.proto > src/protoGenerate/proto.json"
   },
   "dependencies": {
+    "axios": "^0.19.1",
     "core-js": "^3.4.4",
+    "protobufjs": "^6.8.8",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
     "vuex": "^3.1.2"
