@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "protoJs": "pbjs -t json-module -w commonjs -o src/protoGenerate/proto.js  src/proto/*.proto",
-    "protoJson": "pbjs -t json src/proto/*.proto > src/protoGenerate/proto.json"
+    "protoJson": "pbjs -t json src/proto/*.proto > src/protoGenerate/proto.json",
+    "protoJsonEx": "pbjs -t json src/proto/*/*.proto > src/proto/proto.json"
   },
   "dependencies": {
     "axios": "^0.19.1",
